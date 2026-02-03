@@ -49,3 +49,31 @@ Integridade de Dados: O modelo é imune a mudanças de nomes de produtos; basta 
 Escalabilidade: O sistema suporta o crescimento do volume de vendas sem necessidade de reprocessamento manual.
 
 Performance: Modelo otimizado para filtragem rápida no Power BI através de chaves indexadas.
+
+### 5. Inteligência de Dados (Linguagem DAX)
+Para garantir cálculos precisos e performáticos, foram desenvolvidas medidas personalizadas utilizando DAX (Data Analysis Expressions), centralizadas em uma tabela exclusiva de medidas:
+
+Total de Faturamento: Cálculo agregador do valor bruto de vendas.
+
+Quantidade Vendida: Soma total de unidades transacionadas.
+
+Ticket Médio: Métrica estratégica calculada via DIVIDE para identificar o valor médio por transação, permitindo análise de eficiência de vendas.
+
+### 6. Visualização e Insights de Negócio
+O Dashboard foi projetado com foco em User Experience (UX) e Storytelling, apresentando os seguintes insights:
+
+Análise de Tendência: Gráfico de linhas correlacionando o Volume de Vendas vs. Ticket Médio, permitindo identificar picos de demanda e variações na rentabilidade.
+
+Mix de Produtos (Pareto): Gráfico de pizza destacando o "Top 3 Faturamento", revelando que o item Cadeado é o principal gerador de receita (43% do faturamento do grupo).
+
+Performance Comparativa: Gráficos de barras contrastando o faturamento por produto vs. a quantidade física vendida, essencial para identificar produtos de alto valor unitário vs. produtos de giro.
+
+Design Clean: Interface com navegação intuitiva, cartões de KPI destacados e filtros temporais dinâmicos.
+
+### 🔗 Acesso ao Projeto
+Dashboard Interativo: CLIQUE AQUI PARA ACESSAR O RELATÓRIO ONLINE
+
+Arquivo de Dados: O arquivo .pbix está disponível na pasta raiz deste repositório para consulta da estrutura de modelagem.
+
+### 💡 Conclusão
+Este projeto demonstra a capacidade de transformar dados desestruturados em ativos estratégicos. Através da aplicação de Star Schema e ETL avançado, o resultado final não é apenas um gráfico, mas um ecossistema de dados confiável que suporta a tomada de decisão baseada em fatos.
