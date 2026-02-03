@@ -19,13 +19,26 @@ Estabelecimento de conexão dinâmica com o Google Sheets, garantindo que o proc
 Configuração do Power Query como um "motor de receitas", onde cada nova entrada no formulário passa automaticamente por todas as etapas de limpeza sem intervenção manual.
 
 ### 2. Engenharia e Limpeza de Dados (ETL)
+
+<img src="https://github.com/NatanaelSanto/Analise_Completa_Ponta_a_Ponta/blob/main/imagem_2026-02-02_220649040.png?raw=true" alt="Dashboard de Vendas Final" width="500px" align="left">
+
 Padronização de Datas: Tratamento de conflitos de localidade (Locale) para converter formatos americanos/ISO em datas brasileiras, removendo a redundância de horas para otimizar a performance.
 
 Sanitização de Strings: Aplicação de funções Trim (Remover espaços) e Capitalize Each Word para garantir que erros de digitação humana no formulário não gerassem duplicidades de produtos.
 
 Deduplicação: Criação de uma Tabela Dimensão de Produtos (dim_products) através da remoção de duplicatas da base bruta, garantindo a integridade referencial.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ### 3. Modelagem Dimensional e Governança
+
+<img src="https://github.com/NatanaelSanto/Analise_Completa_Ponta_a_Ponta/blob/main/imagem_2026-02-02_221338090.png?raw=true" alt="Dashboard de Vendas Final" width="500px" align="right">
+
 Criação de Chaves Primárias (IDs):
 
 Desenvolvimento de IDs únicos para vendas (Ex: VND-001) e produtos (Ex: PRD-0001) usando Linguagem M.
@@ -43,14 +56,10 @@ Gerenciamento de Carga: Configuração de consultas como "Apenas Conexão" para 
 
 Preparação para o Power BI: Estruturação da consulta final (Fato_Vendas) contendo apenas as chaves (IDs) e valores métricos, seguindo as melhores práticas de mercado para BI.
 
-## 📊 Resultados Alcançados
-Integridade de Dados: O modelo é imune a mudanças de nomes de produtos; basta alterar na dimensão para que todo o histórico seja atualizado.
-
-Escalabilidade: O sistema suporta o crescimento do volume de vendas sem necessidade de reprocessamento manual.
-
-Performance: Modelo otimizado para filtragem rápida no Power BI através de chaves indexadas.
-
 ### 5. Inteligência de Dados (Linguagem DAX)
+
+<img src="https://github.com/NatanaelSanto/Analise_Completa_Ponta_a_Ponta/blob/main/imagem_2026-02-02_220229397.png?raw=true" alt="Dashboard de Vendas Final" width="500px" align="left">
+
 Para garantir cálculos precisos e performáticos, foram desenvolvidas medidas personalizadas utilizando DAX (Data Analysis Expressions), centralizadas em uma tabela exclusiva de medidas:
 
 Total de Faturamento: Cálculo agregador do valor bruto de vendas.
@@ -60,6 +69,9 @@ Quantidade Vendida: Soma total de unidades transacionadas.
 Ticket Médio: Métrica estratégica calculada via DIVIDE para identificar o valor médio por transação, permitindo análise de eficiência de vendas.
 
 ### 6. Visualização e Insights de Negócio
+
+<img src="https://github.com/NatanaelSanto/Analise_Completa_Ponta_a_Ponta/blob/main/imagem_2026-02-02_215707703.png?raw=true" alt="Dashboard de Vendas Final" width="500px" align="right">
+
 O Dashboard foi projetado com foco em User Experience (UX) e Storytelling, apresentando os seguintes insights:
 
 Análise de Tendência: Gráfico de linhas correlacionando o Volume de Vendas vs. Ticket Médio, permitindo identificar picos de demanda e variações na rentabilidade.
@@ -69,6 +81,13 @@ Mix de Produtos (Pareto): Gráfico de pizza destacando o "Top 3 Faturamento", re
 Performance Comparativa: Gráficos de barras contrastando o faturamento por produto vs. a quantidade física vendida, essencial para identificar produtos de alto valor unitário vs. produtos de giro.
 
 Design Clean: Interface com navegação intuitiva, cartões de KPI destacados e filtros temporais dinâmicos.
+
+## 📊 Resultados Alcançados
+Integridade de Dados: O modelo é imune a mudanças de nomes de produtos; basta alterar na dimensão para que todo o histórico seja atualizado.
+
+Escalabilidade: O sistema suporta o crescimento do volume de vendas sem necessidade de reprocessamento manual.
+
+Performance: Modelo otimizado para filtragem rápida no Power BI através de chaves indexadas.
 
 ### 🔗 Acesso ao Projeto
 Dashboard Interativo: CLIQUE AQUI PARA ACESSAR O RELATÓRIO ONLINE
