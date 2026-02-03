@@ -90,7 +90,7 @@ Escalabilidade: O sistema suporta o crescimento do volume de vendas sem necessid
 Performance: Modelo otimizado para filtragem rápida no Power BI através de chaves indexadas.
 
 ### 🔗 Acesso ao Projeto
-Dashboard Interativo: CLIQUE AQUI PARA ACESSAR O RELATÓRIO ONLINE
+Dashboard Interativo: [CLIQUE AQUI PARA ACESSAR O RELATÓRIO ONLINE](https://app.powerbi.com/view?r=eyJrIjoiYWM3Nzc5NmItNTc3Yy00ZWY2LThlZWItNTlkNDg2ZmIyYjg5IiwidCI6ImVlN2FlYzQwLTg1NGUtNDVhYS1hOTc5LTAyMDViNGU3MjcyYSJ9)
 
 Arquivo de Dados: O arquivo .pbix está disponível na pasta raiz deste repositório para consulta da estrutura de modelagem.
 
